@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fun-container {
+  padding-top: 500px;
+}
+
+#ball {
+  position: absolute;
+  z-index: 2;
+}
+.jumping__ball {
+  height: 283px;
+  position: relative;
+}
+#shadow {
+  position: absolute;
+  bottom: 0;
+  opacity: 0.2;
+  transform: scale(0.3);
+}
