@@ -4,8 +4,15 @@
   box-sizing: border-box;
 }
 
+.container__one {
+  width: 100vw;
+}
+
 .fun-container {
+  display: flex;
+  justify-content: space-around;
   padding-top: 500px;
+  overflow: hidden;
 }
 
 #ball {
@@ -13,6 +20,7 @@
   z-index: 2;
 }
 .jumping__ball {
+  display: block;
   height: 283px;
   position: relative;
 }
@@ -21,4 +29,82 @@
   bottom: 0;
   opacity: 0.2;
   transform: scale(0.3);
+}
+
+.magnet {
+  overflow: hidden;
+}
+
+#attractive {
+  position: absolute;
+  left: 100%;
+}
+.picture-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+#lake-1 {
+  position: absolute;
+  width: 100%;
+  top: 41.3vw;
+  z-index: 5;
+}
+#lake-2 {
+  position: absolute;
+  width: 100%;
+  z-index: 4;
+  top: 25vw;
+}
+#lake-3 {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  z-index: 3;
+}
+
+.title__parallax {
+  z-index: 6;
+  position: absolute;
+  margin-top: 60vh;
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+
+.container__three {
+  width: 100vw;
+  height: 100vh;
+  background-color: aquamarine;
+}
+
+h2 {
+  font-size: 56px;
+}
+.title__change {
+  position: absolute;
+  width: 100vw;
+  text-align: center;
+  margin-top: 50vh;
+}
+.moveright-screen {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 100%;
+  background-color: palevioletred;
+}
+.moveleft-screen {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: -100%;
+  background-color: orange;
+}
+#trigger {
+  position: absolute;
+  width: 100px;
+  height: 2000px;
+  z-index: -1;
 }
