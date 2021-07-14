@@ -2,26 +2,45 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 72px;
+  text-align: center;
+  padding-top: 150px;
+}
+
+h2 {
+  font-size: 56px;
 }
 
 .container__one {
   width: 100vw;
+  height: 100vh;
+  background-image: url(pictures/blue_abstract_polygonal_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .fun-container {
   display: flex;
   justify-content: space-around;
-  padding-top: 500px;
+  padding-top: 50px;
   overflow: hidden;
+  height: 600px;
+  width: 100%;
 }
 
 #ball {
   position: absolute;
+  top: 292px;
   z-index: 2;
+  max-width: 200px;
 }
 .jumping__ball {
   display: block;
-  height: 283px;
+  height: 500px;
   position: relative;
 }
 #shadow {
@@ -29,15 +48,33 @@
   bottom: 0;
   opacity: 0.2;
   transform: scale(0.3);
+  max-width: 200px;
 }
 
 .magnet {
-  overflow: hidden;
+  position: relative;
+}
+
+.pic-magnet {
+  margin-top: 100px;
+}
+
+.png-magnet {
+  top: 100px;
+}
+
+.wave {
+  top: 200px;
+  margin-left: -50px;
+  position: absolute;
+  opacity: 0;
 }
 
 #attractive {
   position: absolute;
-  left: 100%;
+  top: 260px;
+  left: 300%;
+  z-index: 3;
 }
 .picture-container {
   position: relative;
@@ -77,11 +114,10 @@
   width: 100vw;
   height: 100vh;
   background-color: aquamarine;
+  position: relative;
+  overflow: hidden;
 }
 
-h2 {
-  font-size: 56px;
-}
 .title__change {
   position: absolute;
   width: 100vw;
@@ -107,4 +143,142 @@ h2 {
   width: 100px;
   height: 2000px;
   z-index: -1;
+}
+
+#v-shot {
+  width: 100%;
+  top: -100%;
+  position: absolute;
+}
+
+.container-4 {
+  margin-top: 30vh;
+  overflow: hidden;
+  height: 50vh;
+  position: relative;
+}
+
+.container__five {
+  height: 100vh;
+}
+
+@media (max-width: 1200px) {
+  #lake-1 {
+    display: none;
+  }
+  #lake-2 {
+    position: absolute;
+    width: 130%;
+    z-index: 4;
+    top: 30vw;
+    min-width: 1200px;
+  }
+  #lake-3 {
+    position: absolute;
+    width: 130%;
+    top: 0px;
+    z-index: 3;
+    min-width: 1200px;
+  }
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  .magnet h2 {
+    text-align: center;
+  }
+  #attractive {
+    left: 300%;
+    top: 225px;
+  }
+  #ball {
+    max-width: 150px;
+    top: 338px;
+  }
+
+  #shadow {
+    max-width: 150px;
+  }
+
+  .png-magnet {
+    max-width: 240px;
+  }
+  .wave {
+    max-width: 50px;
+  }
+  .picture-container {
+    display: flex;
+    justify-content: center;
+    height: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  #attractive {
+    left: 265%;
+    top: 225px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+    padding-top: 100px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  #attractive {
+    left: 291%;
+    top: 263px;
+  }
+
+  #ball {
+    max-width: 110px;
+    top: 338px;
+  }
+
+  #shadow {
+    max-width: 110px;
+  }
+  .jumping__ball {
+    display: block;
+    height: 456px;
+  }
+  .png-magnet {
+    max-width: 150px;
+  }
+  .wave {
+    max-width: 35px;
+    top: 245px;
+    margin-left: -30px;
+  }
+  .pic-magnet {
+    margin-top: 180px;
+  }
+  #lake-2 {
+    position: absolute;
+    width: 130%;
+    z-index: 4;
+    top: 81vw;
+    min-width: 1200px;
+  }
+  #lake-3 {
+    position: absolute;
+    width: 130%;
+    top: 0px;
+    z-index: 3;
+    min-width: 1200px;
+  }
 }
