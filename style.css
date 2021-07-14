@@ -234,7 +234,7 @@ h2 {
 @media (max-width: 600px) {
   h1 {
     font-size: 40px;
-    padding-top: 100px;
+    padding-top: 50px;
   }
   h2 {
     font-size: 30px;
@@ -246,7 +246,7 @@ h2 {
 
   #ball {
     max-width: 110px;
-    top: 338px;
+    top: 268px;
   }
 
   #shadow {
@@ -254,7 +254,7 @@ h2 {
   }
   .jumping__ball {
     display: block;
-    height: 456px;
+    height: 385px;
   }
   .png-magnet {
     max-width: 150px;
