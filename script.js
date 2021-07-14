@@ -93,4 +93,5 @@ gsap.from("#v-shot",{y:-1050,
         scrub:0,
         id:"L4",
         markers: true,
+        ease: "none"
 }});

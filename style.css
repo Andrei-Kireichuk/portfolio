@@ -281,4 +281,10 @@ h2 {
     z-index: 3;
     min-width: 1200px;
   }
+  #v-shot {
+    width: 100%;
+    top: -60%;
+    position: absolute;
+    min-width: 1000px;
+  }
 }
