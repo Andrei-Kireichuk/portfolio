@@ -83,7 +83,14 @@ gsap.to(".title__change",{ color:"white", scrollTrigger:{
     id: "L-1",
     //markers: true,
 }});
-
+gsap.to(".title__change-1",{ color:"red", scrollTrigger:{
+    trigger: "#trigger",
+    start:"100px top",
+    end: "+=50",
+    scrub: 3,
+    id: "L-1",
+    //markers: true,
+}});
 gsap.to(".moveleft-screen",{ backgroundColor:"red", scrollTrigger:{
     trigger: "#trigger",
     start:"1200px top",
@@ -95,14 +102,21 @@ gsap.to(".moveleft-screen",{ backgroundColor:"red", scrollTrigger:{
 
 gsap.to(".buttfly-2",{scaleX:0.1, duration:0.5, repeat: -1, yoyo:true, ease:"power1.inOut"});
 
+gsap.to(".big-y",{rotation:-360, duration:3, repeat:-1, ease:"none"});
+gsap.to(".small-y",{rotation:360, duration:3, repeat:-1, ease:"none"});
+gsap.to(".leg-1, .leg-3",{rotation:360, duration:1, repeat:-1, ease:"none"});
+gsap.to(".leg-2",{rotation:360, duration:1, repeat:-1, delay:0.5, ease:"none"});
+gsap.to(".leg-5",{rotation:-360, duration:1, repeat:-1, ease:"none"});
+gsap.to(".leg-4, .leg-6",{rotation:-360, duration:1, repeat:-1, delay:0.5, ease:"none"});
+gsap.fromTo(".bug-container", {y:500, xPercent:-100, },{xPercent:130, y:10, duration: 15, repeat:-1})
 
 
 
 
-gsap.to(".container__three",{ scrollTrigger:{
+gsap.to(".container__three", {backgroundColor:"yellow", scrollTrigger:{
     trigger: ".container__three",
     start:"top top",
-    end: "+=1200",
+    end: "+=2000",
     scrub: 0,
     id: "L-1",
     pin: true,

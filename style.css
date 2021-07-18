@@ -118,7 +118,8 @@ h2 {
   overflow: hidden;
 }
 
-.title__change {
+.title__change,
+.title__change-1 {
   position: absolute;
   width: 100vw;
   text-align: center;
@@ -233,6 +234,67 @@ h2 {
 /*.eight-ball {
   margin: 10vw;
 }*/
+
+.bug-container {
+  position: relative;
+  margin: 50px;
+  /*left: -100%*/
+}
+
+.bug {
+  position: absolute;
+  z-index: 10;
+}
+.leg,
+.small-y,
+.big-y {
+  position: absolute;
+}
+.small-y {
+  top: 35px;
+  left: 98px;
+  z-index: 11;
+}
+
+.big-y {
+  z-index: 12;
+  top: 47px;
+  left: 107px;
+}
+
+.leg-1 {
+  top: 70px;
+  left: 97px;
+}
+.leg-2 {
+  top: 88px;
+  left: 80px;
+  transform: rotate(40deg);
+}
+
+.leg-3 {
+  top: 100px;
+  left: 55px;
+  transform: rotate(65deg);
+}
+
+.leg-4 {
+  top: 10px;
+  left: 62px;
+  transform: rotate(235deg);
+}
+
+.leg-5 {
+  top: 20px;
+  left: 27px;
+  transform: rotate(205deg);
+}
+
+.leg-6 {
+  top: 43px;
+  left: 1px;
+  transform: rotate(175deg);
+}
 
 @media (max-width: 1200px) {
   #lake-1 {
