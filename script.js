@@ -27,8 +27,8 @@ let tl = gsap.timeline({
       ease: "none" 
     },
       });
-      tl.to("#attractive", {xPercent: -300, repeat:true, repeatRefresh: true, duration:2, ease: "bounce"},"+=0.5")
-      .to(".wave", {opacity: 1, duration:0.3, repeat:5, yoyo:true},0);
+      tl.to("#attractive", {xPercent: -300, repeat:true, repeatRefresh: true, duration:2, ease: "bounce"},"+=0.5");
+      tl.to(".wave", {opacity: 1, duration:0.3, repeat:5, yoyo:true},0);
 
 
 
@@ -75,6 +75,30 @@ gsap.to(".moveleft-screen",{ xPercent: 100, scrollTrigger:{
     id: "L-1",
     //markers: true,
 }});
+gsap.to(".title__change",{ color:"white", scrollTrigger:{
+    trigger: "#trigger",
+    start:"1200px top",
+    end: "+=50",
+    scrub: 3,
+    id: "L-1",
+    //markers: true,
+}});
+
+gsap.to(".moveleft-screen",{ backgroundColor:"red", scrollTrigger:{
+    trigger: "#trigger",
+    start:"1200px top",
+    end: "+=50",
+    scrub: 3,
+    id: "L-1",
+    //markers: true,
+}});
+
+gsap.to(".buttfly-2",{scaleX:0.1, duration:0.5, repeat: -1, yoyo:true, ease:"power1.inOut"});
+
+
+
+
+
 gsap.to(".container__three",{ scrollTrigger:{
     trigger: ".container__three",
     start:"top top",
@@ -95,3 +119,88 @@ gsap.from("#v-shot",{y:-1050,
         //markers: true,
         ease: "none"
 }});
+gsap.from("#split-1-left",{yPercent: -100, 
+    scrollTrigger:{
+        trigger:"#split-trigger",
+        start:"500px top",
+        end:"+=100",
+        scrub:3,
+        id:"L4",
+        
+        //markers: true,
+        ease: "none"
+}});
+gsap.from("#split-1-right",{yPercent: 100, 
+    scrollTrigger:{
+        trigger:"#split-trigger",
+        start:"500px top",
+        end:"+=100",
+        scrub:3,
+        id:"L4",
+        
+        //markers: true,
+        ease: "none"
+}});
+gsap.from(".container__five",{ 
+    scrollTrigger:{
+        trigger:".container__five",
+        start:"top top",
+        end:"+=1800",
+        scrub:0,
+        id:"L4",
+        pin: true,
+        //markers: true,
+        ease: "none"
+}});
+
+gsap.from("#split-2-left",{yPercent: -100, 
+    scrollTrigger:{
+        trigger:"#split-trigger",
+        start:"1200px top",
+        end:"+=100",
+        scrub:3,
+        id:"L4",
+        
+        //markers: true,
+        ease: "none"
+}});
+gsap.from("#split-2-right",{yPercent: 100, 
+    scrollTrigger:{
+        trigger:"#split-trigger",
+        start:"1200px top",
+        end:"+=100",
+        scrub:3,
+        id:"L4",
+        
+        //markers: true,
+        ease: "none"
+}});
+/*gsap.to("#split-1-left",{yPercent: 100, 
+    scrollTrigger:{
+        trigger:"#split-trigger",
+        start:"700px top",
+        end:"+=100",
+        scrub:3,
+        id:"L4",
+        
+        //markers: true,
+        ease: "none"
+}});
+gsap.to("#split-1-right",{yPercent: -100, 
+    scrollTrigger:{
+        trigger:"#split-trigger",
+        start:"700px top",
+        end:"+=100",
+        scrub:3,
+        id:"L4",
+        
+        //markers: true,
+        ease: "none"
+}});*/
+
+/*let tl = gsap.timeline();
+
+tl.to(".eight-ball", {y:100,x:0},0)
+.to(".eight-ball", {x:100,y:0},1)
+.to(".eight-ball", {x:0,y:-100},3)
+.to(".eight-ball", {x:-100,y:0},4);*/

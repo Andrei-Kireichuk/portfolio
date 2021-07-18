@@ -141,7 +141,7 @@ h2 {
 #trigger {
   position: absolute;
   width: 100px;
-  height: 2000px;
+  height: 2800px;
   z-index: -1;
 }
 
@@ -155,12 +155,84 @@ h2 {
   margin-top: 30vh;
   overflow: hidden;
   height: 50vh;
+  width: 100vw;
   position: relative;
 }
 
 .container__five {
+  margin-top: 20vh;
   height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-image: url(pictures/right-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+.picture-1,
+.picture-2,
+.picture-3 {
+  display: grid;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.split-left {
+  object-fit: cover;
+  justify-self: end;
+  max-height: 100%;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  top: 0;
+}
+.split-right {
+  object-fit: cover;
+  justify-self: start;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  top: 0;
+}
+#split-trigger {
+  position: absolute;
+  height: 2000px;
+  width: 100px;
+  z-index: -1;
+}
+
+.container__six {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(pictures/field.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.buttfly-1,
+.buttfly-2,
+.flower {
+  position: absolute;
+}
+
+.buttfly-1,
+.buttfly-2 {
+  top: 250px;
+}
+.flower {
+  width: 580px;
+}
+
+.butt-container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 550px;
+}
+/*.eight-ball {
+  margin: 10vw;
+}*/
 
 @media (max-width: 1200px) {
   #lake-1 {
@@ -286,5 +358,14 @@ h2 {
     top: -60%;
     position: absolute;
     min-width: 1000px;
+  }
+
+  .buttfly-1,
+  .buttfly-2 {
+    width: 250px;
+  }
+  .container__five {
+    background-size: auto 100%;
+    background-position: center center;
   }
 }
